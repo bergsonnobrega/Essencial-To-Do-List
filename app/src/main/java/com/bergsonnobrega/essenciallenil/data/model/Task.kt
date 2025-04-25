@@ -10,7 +10,7 @@ data class Task(
     val id: Long = 0,
     val title: String,
     val description: String? = null,
-    // Usaremos String por enquanto para simplificar, converteremos para LocalDateTime depois
-    val dateTime: String? = null,
+    // Mudar tipo para LocalDateTime?
+    val dateTime: LocalDateTime? = null,
     val isDone: Boolean = false
 ) 

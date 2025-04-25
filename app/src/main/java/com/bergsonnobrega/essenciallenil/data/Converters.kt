@@ -10,12 +10,12 @@ class Converters {
     @TypeConverter
     fun fromTimestamp(value: Long?): LocalDateTime? {
         // Converte Long (timestamp UTC) para LocalDateTime
-        return value?.let { LocalDateTime.ofInstant(Instant.ofEpochMilli(it), ZoneOffset.UTC) }
+        return value?.let { LocalDateTime.ofInstant(Instant.ofEpochSecond(it), ZoneOffset.UTC) }
     }
 
     @TypeConverter
     fun dateToTimestamp(date: LocalDateTime?): Long? {
         // Converte LocalDateTime para Long (timestamp UTC)
-        return date?.toInstant(ZoneOffset.UTC)?.toEpochMilli()
+        return date?.toEpochSecond(ZoneOffset.UTC)
     }
 } 

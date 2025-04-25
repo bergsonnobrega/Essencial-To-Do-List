@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Essencial Lenil</string>
+
+    <!-- Notification Channel -->
+    <string name="notification_channel_name">Lembretes de Tarefas</string>
+    <string name="notification_channel_description">Notificações para tarefas pendentes</string>
+
+    <!-- Notification Content -->
+    <string name="task_reminder_notification_title">Lembrete de Tarefa!</string>
+    <string name="task_reminder_notification_default_text">Você tem uma tarefa pendente.</string>
+    <string name="notification_action_mark_as_done">Marcar como Concluída</string>
+
 </resources>
